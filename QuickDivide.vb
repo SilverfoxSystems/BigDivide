@@ -11,7 +11,7 @@ Public Class Form1
         Hyper.maxDigitsInString = 7 'display range
 
         ' input some random numbers for a and d ->
-        Dim a As New Hyper(-251, -253)    'assign 3 * 8 bytes for a, with its loest exponent (2^64)^253                  
+        Dim a As New Hyper(-251, -253)    'assign 3 * 8 bytes for a, with its least exponent (2^64)^(-253)
         a(-252) = -79786875757656175
         a(-253) = 79978687575765619 '
         a(-251) = 7978687575765619
@@ -48,7 +48,7 @@ Public Class Form1
         Dim bp, r1 As Hyper
 
         hiExp% = d.FindHighExponent
-        lowExp% = d.FindLowExponent
+        lowExp% = d.FindLowExponent '000000000000000000000000000000000000000000000 d.PartSize
         lowVal& = d(lowExp)
         If lowVal And 1 = 0 Then
             Debug.WriteLine("even nr")
