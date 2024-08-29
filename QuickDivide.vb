@@ -18,7 +18,7 @@ Public Class Form1
 
         Dim d As New Hyper(-444, -444) 'reserve 8 bytes for the divisor
         d(-444) = 1 + (2 ^ 53)
-        d(-5) = 1 + 2 ^ 44 'mantissa automatically gets extened when assigning vslues at exponents out of current range; now the size of "d" is ((444-5) * 8) bytes
+        d(-5) = 1 + 2 ^ 44 'mantissa automatically gets extended when assigning values at exponents out of current range; now the memory size of "d" is ((444-5) * 8) bytes
 
         Debug.WriteLine("")
 
