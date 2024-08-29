@@ -1,4 +1,4 @@
-Divides using only multiplication
+Divides using only multiplication.
 
 Produces an approximate result.
 
