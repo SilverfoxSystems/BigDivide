@@ -48,7 +48,7 @@ Public Class Form1
         Dim bp, r1 As Hyper
 
         hiExp% = d.FindHighExponent
-        lowExp% = d.FindLowExponent '000000000000000000000000000000000000000000000 d.PartSize
+        lowExp% = d.FindLowExponent
         lowVal& = d(lowExp)
         If lowVal And 1 = 0 Then
             Debug.WriteLine("even nr")
