@@ -50,7 +50,7 @@ Public Class Form1
         hiExp% = d.FindHighExponent
         lowExp% = d.FindLowExponent '000000000000000000000000000000000000000000000 d.PartSize
         lowVal& = d(lowExp)
-        If lowVal And 1 = 0 Then
+        If (lowVal And 1) = 0 Then
             Debug.WriteLine("even nr")
             'if the least significant bit is 0, then we can help ourselves with dividing/multiplying the dividend, and then the result, by 2^n.
 
